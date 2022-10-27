@@ -23,5 +23,8 @@ void LEDcontrol(char con) {
     Serial.print("From Arduino, LED is off \n");
     digitalWrite(LEDPin, LOW);
   }
-
+    if (con == '2') {
+      double val = (analogRead(0)-512/512.0
+      Serial.print(val);
+    }
 } 
